@@ -45,3 +45,41 @@ my computer and remote servers.
 This project helped me develop a better understanding of how network
 traffic moves between devices and how tools such as Wireshark can be
 used to inspect network communication.
+
+## Packet Analysis
+
+### 1. DNS Analysis
+
+I captured DNS traffic generated while accessing a website. The DNS
+query showed my computer requesting the IP address associated with the
+domain name.
+
+This demonstrated how DNS allows devices to translate human-readable
+domain names into IP addresses used for network communication.
+
+![DNS Analysis](screenshots/dns-query.png)
+
+### 2. TCP Three-Way Handshake
+
+I examined the process used to establish a TCP connection.
+
+The connection consisted of:
+
+1. SYN - The client requested a connection.
+2. SYN-ACK - The server acknowledged the request.
+3. ACK - The client confirmed the connection.
+
+This process establishes a reliable TCP connection before application
+data is transmitted.
+
+![TCP Handshake](screenshots/tcp-handshake.png)
+
+### 3. TLS/HTTPS Traffic
+
+I analyzed TLS traffic generated while accessing an HTTPS website.
+
+The packet capture showed TLS communication between my computer and a
+remote server. Unlike unencrypted traffic, the application data was
+encrypted and could not be directly read from the packet capture.
+
+![TLS Traffic](screenshots/tls-traffic.png)
